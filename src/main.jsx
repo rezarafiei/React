@@ -6,9 +6,11 @@ const showNames = ['reza', 'ashkan', 'parisa']
 
 const sayHello = <div>
   <ul>
-{/* چرا اینجا ما ارور داریم زمانی که اکولاد میگذاریم */}
+    {/* چرا با foreach اجرا نمیشه؟ */}
     {
-      showNames.map((element) => {<li key={element}>{element}</li>})
+      showNames.forEach(element => 
+        <li>{element}</li>
+      )
     }
   </ul>
 </div>
