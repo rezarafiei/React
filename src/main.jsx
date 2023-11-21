@@ -1,17 +1,11 @@
 import ReactDOM from 'react-dom/client'
-import './index.css'
+import "./assets/general.scss"
+import stylesA from './main.modules.scss'
+console.log(stylesA)
 
-const showNames = ['reza', 'ashkan', 'parisa']
-
-
+// علت اجرا نشدن ماژول سی اس  اس من چی هست؟
 const sayHello = <div>
-  <ul>
-    {/* چرا با foreach اجرا نمیشه؟ */}
-    {
-      showNames.forEach(element => 
-        <li>{element}</li>
-      )
-    }
-  </ul>
+  <button className={stylesA.btn}>click me</button>
+
 </div>
 ReactDOM.createRoot(document.getElementById('root')).render(sayHello)
